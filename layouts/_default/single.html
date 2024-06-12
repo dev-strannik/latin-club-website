@@ -9,20 +9,20 @@
   <body>
     <!-- Header -->
     {{ partial "header.html" . }}
-
     <!-- Main Content -->
     <main>
       <article>
         <h1>{{ .Title }}</h1>
+        {{ with .Params.author }}
+        <span class="post-author">by {{ . }}</span>
+        {{ end }}
         {{ partial "list-page-tags.html" . }}
         <p id="date">{{ .Date.Format "Jan 2, 2006" }}</p>
         <div>{{ .Content }}</div>
       </article>
     </main>
-
     <!-- Footer -->
     {{ partial "footer.html" . }}
-
     <!-- Include any additional scripts or analytics tracking code -->
   </body>
 </html>
