@@ -1,0 +1,38 @@
+baseURL = "https://example.org/"
+languageCode = "en-us"
+title = "PHS Latin Club"
+
+theme = "hugo-dead-simple"
+sectionPagesMenu = "main"
+enableGitInfo = true
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+[params]
+description = "Hugo dead simple example"
+
+[markup.highlight]
+codeFences = true
+style = "bw"
+lineNumbersInTable = false
+noClasses = false
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[outputs]
+home = ["html", "rss", "json"]
+page = ["html"]
+
+# [[menu.main]]
+# name = "<u>H</u>ome"
+# url = "/"
+# weight = 1
+#
+# [[menu.main]]
+# name = "<u>T</u>ags"
+# url = "https://hugo-dead-simple.netlify.com/tags"
+# url = "/tags/"
+# weight = 3

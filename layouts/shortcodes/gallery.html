@@ -1,0 +1,14 @@
+<!-- Directory relative to website structure -->
+{{ $dir := .Get "dir" }}
+<!-- Directory relative to file structure -->
+{{ $filedir := printf "/static/%s" ($dir) }} {{ $files := readDir $filedir }}
+
+<div class="gallery">
+  {{ range $files }}
+  <div class="image-container" >
+    <a href="{{ .Name }}">
+      <img src="/{{ $dir }}/{{ .Name }}" alt="{{ .Name }}" />
+    </a>
+  </div>
+  {{ end }}
+</div>

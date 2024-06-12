@@ -1,0 +1,30 @@
+/* Style for the gallery container */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+}
+
+/* Style for each image container */
+.image-container {
+  margin: 8px;
+  width: 22%;
+}
+
+/* Style for the image */
+.image-container img {
+  display: inline-block;
+  margin: 0;
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.1s ease; /* Add transition effect */
+  border: solid var(--border-thickness) var(--background);
+  border-radius: var(--roundness);
+}
+
+/* Hover effect for the image */
+.image-container img:hover {
+  transform: scale(1.08); /* Scale the image slightly on hover */
+  border: solid var(--border-thickness) var(--accent);
+}

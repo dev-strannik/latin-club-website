@@ -1,0 +1,10 @@
+/public/
+/resources/
+.DS_Store
+.vscode/
+/node_modules/
+.idea/
+/tmp/
+.env
+.cache/
+*.log

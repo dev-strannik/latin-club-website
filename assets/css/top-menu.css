@@ -1,0 +1,29 @@
+/* Top menu styling */
+.top-menu {
+  display: inline-block;
+  position: relative;
+  background-color: var(--complimentary);
+  margin: 25px auto 10px;
+  border-radius: var(--roundness);
+  font-size: 0;
+}
+
+.top-menu a {
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  height: 100%;
+  line-height: 2;
+  display: inline-block;
+  color: var(--text);
+  padding: 15px 10px;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.1s ease; /* Add transition effect */
+}
+
+.top-menu a:hover {
+  /*color: var(--accent);*/
+  transform: translatey(-3px); /* Scale the image slightly on hover */
+}

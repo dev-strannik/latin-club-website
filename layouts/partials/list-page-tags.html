@@ -1,0 +1,14 @@
+<div class="tag-section">
+  <p class="tags">Tags:</p>
+  <ul class="list-page-tags">
+    {{ range .Params.tags }}
+    <li>
+      <em
+        ><a class="tags" href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}/"
+          >{{ . }}</a
+        >
+      </em>
+    </li>
+    {{ end }}
+  </ul>
+</div>
