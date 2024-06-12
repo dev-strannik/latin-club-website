@@ -1,6 +1,7 @@
 +++
 title = 'How to Add Content'
 date = 2024-06-09T15:17:18-04:00
+author = "Strannik"
 categories = ["timeless"]
 tags = ["informational", "instructions"]
 +++
@@ -34,4 +35,5 @@ I recommend [ghostwriter](https://ghostwriter.kde.org/) for your Markdown text e
 
 1. For memes just get the files with non-exotic extention (`.webp`, `.jpg` or `.png`).
 2. Then name them all lowercase using dashes (`-`) instead of spaces (`doge-speaking-latin.jpg`).
-3. Send them to me or upload them directly to [Github](). TODO: ADD GITHUB
+4. [Let me know](mailto:public_mail@tutanota.com) (`public_mail@tutanota.com`) that you want your memes to be uploaded and we'll figure out the easiest way.
+    > Or open an issure on [Github](https://github.com/dev-strannik/latin-club-website). TODO: ADD GITHUB

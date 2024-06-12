@@ -1,6 +1,7 @@
 +++
 title = 'Creation of This Website'
 date = 2024-05-26T13:47:00-04:00
+author = "Strannik"
 categories = ["momentary"]
 tags = ["informational"]
 +++
