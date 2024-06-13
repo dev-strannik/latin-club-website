@@ -1,0 +1,21 @@
+{{ partial "header.html" . }}
+<main>
+  <article>
+    <h1>{{ .Title }}</h1>
+  </article>
+  <div class="home-content">{{ .Content }}</div>
+  <ul>
+    {{ range .Pages }}
+    <li>
+      <div style="display: grid; grid-template-columns: 7em auto">
+        <span class="date">{{ .Date.Format "Jan 2, 2006" }}</span>
+        <div>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <p class="summary">{{ .Summary }}</p>
+        </div>
+      </div>
+    </li>
+    {{ end }}
+  </ul>
+</main>
+{{ partial "footer.html" . }}

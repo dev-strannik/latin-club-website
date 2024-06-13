@@ -3,7 +3,7 @@
   <article>
     <h1>{{ .Title }}</h1>
   </article>
+  <div class="home-content">{{ .Content }}</div>
+  {{ partial "posts-by-category.html" . }}
 </main>
-<div class="home-content">{{ .Content }}</div>
-{{ partial "posts-by-category.html" . }}
 {{ partial "footer.html" . }}

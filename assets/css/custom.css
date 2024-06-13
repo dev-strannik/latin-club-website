@@ -1,7 +1,3 @@
-body {
-  /*font-family: sans-serif;*/
-}
-
 :root {
   --text: #231934;
   --background: #d5cbe6;
@@ -63,6 +59,12 @@ body {
 }
 .tags {
   display: inline;
+  color: var(--text-dim);
+  font-size: 0.8rem;
+}
+.summary {
+  margin: 0;
+  padding-left: 16px;
   color: var(--text-dim);
   font-size: 0.8rem;
 }

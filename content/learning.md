@@ -1,7 +1,6 @@
 +++
 title = 'Learning'
 date = 2024-06-09T09:20:16-04:00
-categories = ["timeless"]
 tags = ["educational", "external"]
 +++
 
