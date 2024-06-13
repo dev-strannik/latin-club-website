@@ -9,3 +9,5 @@ layout = "homepage"
 ## We are Plant High School Latin Club.
 
 [Go to External Articles]({{< relref "external-articles/_index.md" >}})
+
+[Donate]({{< relref "donate.md" >}})

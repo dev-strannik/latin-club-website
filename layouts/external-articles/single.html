@@ -1,0 +1,13 @@
+<!-- Header -->
+{{ partial "header.html" . }}
+<!-- Main Content -->
+<main>
+  <article>
+    <h1>{{ .Title }}</h1>
+    <p id="date">{{ .Date.Format "Jan 2, 2006" }}</p>
+    <div>{{ .Content }}</div>
+  </article>
+</main>
+<!-- Footer -->
+{{ partial "footer.html" . }}
+<!-- Include any additional scripts or analytics tracking code -->
