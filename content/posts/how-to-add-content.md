@@ -33,10 +33,10 @@ categories = ["timeless"]
 tags = ["informational", "instructions"]
 +++
 ```
+
 - `title`, and `author` are self explenatory.
   However for `date` you don't have to worry about the time, just make sure the date is right, time doesn't matter.
 - Keep reading for `tags` and `categories` explanations.
-
 
 ### Pick Tags
 
@@ -47,6 +47,8 @@ Pick at least one, but add your own if necessary.
 {{< list-site-tags >}}
 
 ### Pick a Category
+
+> Don't add your own category.
 
 - _timeless_ -- assign when the topic you are writing on is on something untied to a contemporary event, when you think it will not become outdated. Examples are tutorials, instructions, general opinion articles, tips or, guides.
 

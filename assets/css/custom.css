@@ -1,3 +1,7 @@
+body {
+  /*font-family: sans-serif;*/
+}
+
 :root {
   --text: #231934;
   --background: #d5cbe6;
@@ -69,4 +73,22 @@
 }
 .footer-container .footer-logo {
   width: 10%;
+}
+
+.categories-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+  gap: 20px; /* Adjust the gap between columns as needed */
+}
+.category-column {
+  padding: 10px;
+}
+.category-column h3 {
+  margin-top: 0;
+}
+/* Media query for mobile or narrow screens */
+@media (max-width: 768px) {
+  .categories-list {
+    grid-template-columns: 1fr; /* Stack columns on top of each other */
+  }
 }

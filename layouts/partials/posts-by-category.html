@@ -1,0 +1,33 @@
+{{ $categories := .Site.Taxonomies.categories }}
+{{ if $categories }}
+<div class="categories-list">
+  {{ range $categoryName, $posts := $categories }}
+  {{ $isTimeless := eq $categoryName "timeless" }}
+  <div class="category-column">
+    <h3>{{ title $categoryName }}</h3>
+    <ul>
+      {{ range $posts.Pages }}
+      <li>
+        {{ if not $isTimeless }}
+        <div style="display: grid; grid-template-columns: 7em auto">
+          <span class="date">{{ .Date.Format "Jan 2, 2006" }}</span>
+          {{ if .Params.bold }}
+          <a class="bold-post-in-list" href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
+          {{ else }}
+          <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
+          {{ end }}
+        </div>
+        {{ else }}
+        {{ if .Params.bold }}
+        <a class="bold-post-in-list" href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
+        {{ else }}
+        <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
+        {{ end }}
+        {{ end }}
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+  {{ end }}
+</div>
+{{ end }}
