@@ -1,4 +1,6 @@
-# baseURL = "https://dev-strannik.github.io/latin-club-website/"
+baseURL = "https://dev-strannik.github.io/latin-club-website/"
+relativeURLs = true
+canonifyURLs = true
 languageCode = "en-us"
 title = "PHS Latin Club"
 
