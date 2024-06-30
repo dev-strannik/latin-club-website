@@ -1,9 +1,8 @@
-baseURL = "https://dev-strannik.github.io/latin-club-website/"
+# baseURL = "https://dev-strannik.github.io/latin-club-website/"
 languageCode = "en-us"
 title = "PHS Latin Club"
 
 theme = "hugo-dead-simple"
-sectionPagesMenu = "main"
 enableGitInfo = true
 
 [taxonomies]
@@ -13,26 +12,34 @@ tag = "tags"
 [params]
 description = "Hugo dead simple example"
 
+[markup]
 [markup.highlight]
 codeFences = true
 style = "bw"
 lineNumbersInTable = false
 noClasses = false
 
-[markup.goldmark.renderer]
-unsafe = true
+# [markup.goldmark]
+# [markup.goldmark.renderer]
+# unsafe = true
 
 [outputs]
 home = ["html", "rss", "json"]
 page = ["html"]
 
-# [[menu.main]]
-# name = "<u>H</u>ome"
-# url = "/"
-# weight = 1
-#
-# [[menu.main]]
-# name = "<u>T</u>ags"
-# url = "https://hugo-dead-simple.netlify.com/tags"
-# url = "/tags/"
-# weight = 3
+sectionPagesMenu = "main"
+
+[[menu.main]]
+name = "Posts"
+url = "/posts/"
+weight = 1
+
+[[menu.main]]
+name = "Memes"
+url = "/memes/"
+weight = 2
+
+[[menu.main]]
+name = "Tags"
+url = "/tags/"
+weight = 3

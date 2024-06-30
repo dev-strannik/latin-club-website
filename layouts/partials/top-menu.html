@@ -1,11 +1,12 @@
-<header>
-  <nav class="top-menu">
-    <a href="{{ `/` | relURL }}"><u>H</u>ome</a>
-    <a href="{{ `/memes` | relURL }}">Memes</a>
-    <a href="{{ `/posts/` | relURL }}">Posts</a>
-    <a href="{{ `/learning` | relURL }}">Learning</a>
-    <a href="{{ `/tags/` | relURL }}"><u>T</u>ags</a>
-  </nav>
+<nav class="top-menu">
+  <a href="/" class="logo">
+    <img src="/logos/logo.webp" alt="Site Logo">
+  </a>
+  <ul>
+    {{ range .Site.Menus.main }}
+    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+    {{ end }}
+  </ul>
   <!--{{ partial "search-form.html" . }}-->
   <!--<ul id="results"></ul>-->
-</header>
+</nav>

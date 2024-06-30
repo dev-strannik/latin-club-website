@@ -1,29 +1,85 @@
 /* Top menu styling */
 .top-menu {
-  display: inline-block;
-  position: relative;
+  display: flex; /* Changed to flex for vertical centering */
+  align-items: center; /* Vertically center the items */
+  justify-content: space-between; /* Space between logo and menu items */
   background-color: var(--complimentary);
   margin: 25px auto 10px;
   border-radius: var(--roundness);
   font-size: 0;
+  text-align: center;
+  padding: 0 15px;
+  height: 60px; /* Set a fixed height for the menu */
+}
+
+.top-menu .logo {
+  padding: 0;
+  height: 50px;
+  margin-right: auto; /* Pushes the logo to the left */
+}
+
+.top-menu .logo img {
+  padding: 0;
+  margin: 0;
+  height: 100%; /* Make the logo fill the menu vertically */
+  max-height: 100%; /* Ensure the logo does not exceed the menu height */
+}
+
+.top-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Changed to flex for horizontal alignment */
+  align-items: center; /* Vertically center the menu items */
+}
+
+.top-menu ul li {
+  display: inline-block;
 }
 
 .top-menu a {
   font-size: 1rem;
   text-transform: uppercase;
   text-align: center;
-  height: 100%;
-  line-height: 2;
   display: inline-block;
   color: var(--text);
-  padding: 15px 10px;
+  padding: 15px 20px; /* Adjust padding for larger touch targets */
   text-decoration: none;
   position: relative;
   cursor: pointer;
-  transition: transform 0.1s ease; /* Add transition effect */
+  transition: transform 0.1s ease;
 }
 
 .top-menu a:hover {
-  /*color: var(--accent);*/
-  transform: translatey(-3px); /* Scale the image slightly on hover */
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .top-menu {
+    flex-direction: column; /* Stack logo and menu items vertically on smaller screens */
+    align-items: flex-start; /* Align items to the start */
+    height: auto; /* Adjust height for stacked items */
+  }
+
+  .top-menu .logo {
+    margin-bottom: 15px; /* Add some space between the logo and the menu items */
+    height: 50px; /* Ensure the logo size remains consistent */
+  }
+
+  .top-menu ul {
+    display: block; /* Stack menu items vertically */
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  .top-menu ul li {
+    display: block; /* Ensure li elements stack vertically */
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  .top-menu a {
+    display: block;
+    width: 100%; /* Make links take full width on smaller screens */
+    padding: 15px 0; /* Adjust padding for better touch interaction */
+    text-align: left; /* Align text to the left */
+  }
 }

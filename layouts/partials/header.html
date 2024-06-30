@@ -64,8 +64,10 @@
     | resources.Concat "style.css" | minify | fingerprint }}
     <link rel="stylesheet" type="text/css" href="{{ $CSS.RelPermalink }}" media="all">
   </head>
+  <header>
+    {{ if not .Params.nomenu }}
+      {{ partial "top-menu" . }}
+    {{ end }}
+  </header>
 
   <body>
-        {{ if not .Params.nomenu }}
-          {{ partial "top-menu" . }}
-        {{ end }}

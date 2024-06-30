@@ -1,5 +1,6 @@
 +++
-title = 'Donate to the Developer'
+menus = 'main'
+title = 'Donate'
 date = 2024-06-13T14:22:38-04:00
 +++
 
